@@ -13,7 +13,7 @@
 1. nltk==3.8.1
 
 ## Train VAE
-
+Unzip the VAE_Train.zip file under data before training VAE.
 ```
 conda env create -f PepDiffusion.yaml
 conda activate PepDiffusion
