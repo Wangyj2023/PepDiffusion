@@ -1,0 +1,18 @@
+name: PepDiffusion
+channels:
+  - huggingface
+  - pytorch
+  - nvidia
+  - defaults
+dependencies:
+  - python=3.8.18
+  - pytorch=1.13.1
+  - torchvision=0.14.1
+  - torchaudio=0.13.1
+  - pytorch-cuda=11.6
+  - transformers=4.33.2
+  - pandas=2.0.3
+  - pip
+  - pip:
+      - nltk==3.8.1
+
