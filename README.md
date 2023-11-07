@@ -2,6 +2,17 @@
 
 
 
+## Install
+need 5 - 10 minutes
+
+```
+git clone https://github.com/Wangyj2023/PepDiffusion.git
+cd PepDiffusion
+conda env create -f PepDiffusion.yaml
+conda activate PepDiffusion
+```
+
+
 ## Requirement
 
 1. python==3.8.18
@@ -12,15 +23,15 @@
 1. pandas==2.0.3
 1. nltk==3.8.1
 
+## Generation AMPs
+need 5 minutes
+```
+python main.py --work Generate 
+python main.py --work Generate --Generate_VAE_model_path {VAE_path} --Generate_Diffusion_model_path {Diffusion_path}
+```
+
 ## Train VAE
 Unzip the VAE_Train.zip file under data before training VAE.
-```
-conda env create -f PepDiffusion.yaml
-conda activate PepDiffusion
-```
-
-## Train VAE
-
 ```
 torchrun --nproc_per_node=8 main.py --work TransVAE 
 ```
@@ -41,9 +52,5 @@ python combine_mem_c.py
 torchrun --nproc_per_node=8 main.py --work LatentDiffusion_condition 
 ```
 
-## Generation AMPs
 
-```
-python main.py --work Generate --Generate_VAE_model_path {VAE_path} --Generate_Diffusion_model_path {Diffusion_path}
-```
 
