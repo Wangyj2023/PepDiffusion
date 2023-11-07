@@ -24,7 +24,7 @@ conda activate PepDiffusion
 1. nltk==3.8.1
 
 ## Generation AMPs
-need 5 minutes
+20 minutes for 5120 sequences (run on v100)
 ```
 python main.py --work Generate 
 python main.py --work Generate --Generate_VAE_model_path {VAE_path} --Generate_Diffusion_model_path {Diffusion_path}
