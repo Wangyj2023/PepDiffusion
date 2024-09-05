@@ -1,4 +1,4 @@
-# Artificial intelligence by using a latent diffusion model enables the generation of diverse and potent antimicrobial peptides to combat antibiotic resistance
+# Artificial intelligence using a latent diffusion model enables the generation of diverse and potent antimicrobial peptides
 
 
 
