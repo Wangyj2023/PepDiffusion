@@ -1,0 +1,35 @@
+integrator               = md
+dt                       = 0.02 
+nsteps                   = 100000
+nstxout                  = 0 
+nstvout                  = 0
+nstfout                  = 0
+nstlog                   = 1000 
+nstxout-compressed       = 1000
+compressed-x-precision   = 100
+
+cutoff-scheme            = Verlet
+nstlist                  = 20
+ns_type                  = grid
+pbc                      = xyz
+verlet-buffer-tolerance  = 0.005
+
+coulombtype              = reaction-field 
+rcoulomb                 = 1.1
+epsilon_r                = 15    ; 2.5 (with polarizable water)
+epsilon_rf               = 0
+vdw_type                 = cutoff  
+vdw-modifier             = Potential-shift-verlet
+rvdw                     = 1.1
+
+tcoupl                   = v-rescale 
+tc-grps                  = Protein POPC_POPG W_WF_Ion 
+tau-t                    = 1.0 1.0 1.0
+ref-t                    = 300 300 300 
+gen-vel                  = yes
+gen-temp                 = 300
+Pcoupl                   = berendsen 
+Pcoupltype               = semiisotropic
+tau-p                    = 4.0
+compressibility          = 4.5e-5 4.5e-5 
+ref-p                    = 1.0 1.0

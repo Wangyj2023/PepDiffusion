@@ -52,5 +52,9 @@ python combine_mem_c.py
 torchrun --nproc_per_node=8 main.py --work LatentDiffusion_condition 
 ```
 
+## Reference Links
 
-
++ CLaSS (https://github.com/IBM/controlled-peptide-generation)
++ HydrAMP, PepVAE, VAE (https://github.com/szczurek-lab/hydramp)
++ MLpeptide (https://github.com/reymond-group/MLpeptide)
++ ML pepline (https://doi.org/10.1038/s41551-022-00991-2)
